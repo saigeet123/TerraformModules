@@ -20,7 +20,3 @@ variable "instance_type" {
   description = "type for aws EC2 instance"
   default = "t2.micro"
 }
-variable "environment_tag" {
-  description = "Environment tag"
-  default = "Production"
-}
