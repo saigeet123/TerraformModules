@@ -22,8 +22,4 @@ resource "aws_instance" "testInstance" {
   subnet_id = "${module.networkModule.public_subnet_id}"
   vpc_security_group_ids = ["${module.networkModule.sg_22_id}"]
   key_name = "${aws_key_pair.ec2key.key_name}"
-
-  tags {
-		"Environment" = "${var.environment_tag}"
-	}
 }
